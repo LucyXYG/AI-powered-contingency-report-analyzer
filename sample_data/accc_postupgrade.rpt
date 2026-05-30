@@ -1,0 +1,37 @@
+PSS(R)E  AC CONTINGENCY CALCULATION REPORT
+  STUDY2026_SUMMER_PEAK_UPGRADE
+  RATING SET: A (NORMAL)    SOLVED: Thu May 28 14:03:00 2026
+  BASE CASE: STUDY2026_SUMMER_PEAK_UPGRADE.sav     DFAX: study.dfx
+  THRESHOLDS:  FLOW > 100.0%   VOLTAGE < 0.950 PU OR > 1.050 PU
+=================================================================================================================
+
+MONITORED BRANCH OVERLOADS (THERMAL)
+-----------------------------------------------------------------------------------------------------------------
+FROM BUS FROM NAME           KV TO BUS TO NAME            KV CK CONTINGENCY LABEL       RATING FLOW(MVA)    LOAD%
+-----------------------------------------------------------------------------------------------------------------
+CONTINGENCY: L_CEDAR-BIRCH_230_1
+ 50003BIRCH 230         230.0  50004ASPEN 230         230.0 1  L_CEDAR-BIRCH_230_1        717.0     731.0    102.0
+
+CONTINGENCY: L_BIRCH-ASPEN_230_1
+ 50004ASPEN 230         230.0  50005WILLOW230         230.0 1  L_BIRCH-ASPEN_230_1        478.0     548.0    114.6
+
+CONTINGENCY: X_MAPLE_500/230_1
+ 50004ASPEN 230         230.0  50005WILLOW230         230.0 1  X_MAPLE_500/230_1          478.0     491.0    102.7
+
+CONTINGENCY: L_ELM-OAKDALE_115_1
+ 60002OAKDALE115        115.0  60003PINE  115         115.0 1  L_ELM-OAKDALE_115_1        159.0     173.0    108.8
+
+=================================================================================================================
+
+MONITORED BUS VOLTAGE VIOLATIONS
+-----------------------------------------------------------------------------------------------------------------
+BUS    BUS NAME            KV  CONTINGENCY LABEL        V-INIT   V-CONT     DEV%
+-----------------------------------------------------------------------------------------------------------------
+CONTINGENCY: X_MAPLE_500/230_1
+ 50005 WILLOW230         230.0  X_MAPLE_500/230_1          1.0151   0.9461    -0.41
+
+CONTINGENCY: L_ELM-OAKDALE_115_1
+ 60003 PINE  115         115.0  L_ELM-OAKDALE_115_1        1.0009   0.9442    -0.61
+
+=================================================================================================================
+END OF REPORT

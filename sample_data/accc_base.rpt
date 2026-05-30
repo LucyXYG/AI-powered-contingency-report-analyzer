@@ -1,0 +1,50 @@
+PSS(R)E  AC CONTINGENCY CALCULATION REPORT
+  STUDY2026_SUMMER_PEAK_BASE
+  RATING SET: A (NORMAL)    SOLVED: Thu May 28 14:03:00 2026
+  BASE CASE: STUDY2026_SUMMER_PEAK_BASE.sav     DFAX: study.dfx
+  THRESHOLDS:  FLOW > 100.0%   VOLTAGE < 0.950 PU OR > 1.050 PU
+=================================================================================================================
+
+MONITORED BRANCH OVERLOADS (THERMAL)
+-----------------------------------------------------------------------------------------------------------------
+FROM BUS FROM NAME           KV TO BUS TO NAME            KV CK CONTINGENCY LABEL       RATING FLOW(MVA)    LOAD%
+-----------------------------------------------------------------------------------------------------------------
+CONTINGENCY: L_MAPLE-CEDAR_230_1
+ 50002CEDAR 230         230.0  50003BIRCH 230         230.0 1  L_MAPLE-CEDAR_230_1        478.0     660.0    138.1
+ 50001MAPLE 230         230.0  50005WILLOW230         230.0 1  L_MAPLE-CEDAR_230_1        478.0     521.0    109.0
+
+CONTINGENCY: L_CEDAR-BIRCH_230_1
+ 50001MAPLE 230         230.0  50002CEDAR 230         230.0 1  L_CEDAR-BIRCH_230_1        478.0     552.0    115.5
+ 50003BIRCH 230         230.0  50004ASPEN 230         230.0 1  L_CEDAR-BIRCH_230_1        717.0     742.0    103.5
+
+CONTINGENCY: L_BIRCH-ASPEN_230_1
+ 50004ASPEN 230         230.0  50005WILLOW230         230.0 1  L_BIRCH-ASPEN_230_1        478.0     503.0    105.2
+
+CONTINGENCY: X_MAPLE_500/230_1
+ 50011CEDAR 500         500.0  50002CEDAR 230         230.0 1  X_MAPLE_500/230_1         1200.0    1262.0    105.2
+
+CONTINGENCY: X_BIRCH-ELMHURST_1
+ 60001ELMHURST115       115.0  60002OAKDALE115        115.0 1  X_BIRCH-ELMHURST_1         239.0     271.0    113.4
+ 60002OAKDALE115        115.0  60003PINE  115         115.0 1  X_BIRCH-ELMHURST_1         159.0     168.0    105.7
+
+CONTINGENCY: L_ELM-OAKDALE_115_1
+ 60002OAKDALE115        115.0  60003PINE  115         115.0 1  L_ELM-OAKDALE_115_1        159.0     173.0    108.8
+
+=================================================================================================================
+
+MONITORED BUS VOLTAGE VIOLATIONS
+-----------------------------------------------------------------------------------------------------------------
+BUS    BUS NAME            KV  CONTINGENCY LABEL        V-INIT   V-CONT     DEV%
+-----------------------------------------------------------------------------------------------------------------
+CONTINGENCY: L_MAPLE-CEDAR_230_1
+ 60003 PINE  115         115.0  L_MAPLE-CEDAR_230_1        1.0102   0.9381    -1.25
+
+CONTINGENCY: X_MAPLE_500/230_1
+ 50005 WILLOW230         230.0  X_MAPLE_500/230_1          1.0151   0.9402    -1.03
+
+CONTINGENCY: X_BIRCH-ELMHURST_1
+ 60002 OAKDALE115        115.0  X_BIRCH-ELMHURST_1         1.0050   0.9298    -2.13
+ 60003 PINE  115         115.0  X_BIRCH-ELMHURST_1         1.0011   0.9187    -3.29
+
+=================================================================================================================
+END OF REPORT
